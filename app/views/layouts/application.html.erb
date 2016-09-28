@@ -6,10 +6,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
   </head>
 
   <body>
+    <div class="container">
+      <div class="row" id="header-header">
+        <div class="nine columns" style="text-align: left">
+          <p>Marianne B. Rowe, MS | Marriage & Family Therapist</p>
+        </div>
+
+        <div class="three columns" style="text-align: right">
+          <p>(831) 373 - 1017</p>
+        </div>
+      </div>
+    </div>
     <div class="header-image">
 
     </div>
@@ -18,7 +30,7 @@
 
       <div class="container">
         <h3>Marianne B. Rowe, MS</h3>
-        <h4>Marriage & Family Therapist</h4>
+
       </div>
     </header>
 
@@ -26,13 +38,29 @@
 
     <main>
       <div class="container">
+      <hr />
+      <h1>Welcome</h1>
+      <hr />
+    </div>
+
+      <div class="container">
         <div class="row">
-          <div class="two columns">
+          <div class="three columns">
             <aside>
-              <p>sidebar</p>
+              <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services and Specialties</a></li>
+              <li><a href="#">Fees, Forms, and Insurance</a></li>
+              <li><a href="#">Calendar of Events</a></li>
+              <li><a href="#">Mindfulness Courses</a></li>
+              <li><a href="#">Mindful Education Project</a></li>
+              <li><a href="#">Mindful Relating</a></li>
+              <li><a href="#">Questions for Reflection</a></li>
+              <li><a href="#">Location and Contact</a></li>
+              </ul>
             </aside>
           </div>
-          <div class="ten columns">
+          <div class="nine columns">
             <%= yield %>
           </div>
         </div>

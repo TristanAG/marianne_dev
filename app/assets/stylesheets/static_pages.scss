@@ -3,42 +3,120 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  color:#AF87AF;
+  margin-top: 12px;
+  color: darken(#AF87AF, 30%);
+  /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
 }
 
+#header-header{
+  p{
+    font-size: .8em;
+    margin-bottom: 12px;
+  }
+}
+
+hr{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  margin: 8px;
+}
+
 .header-image{
   background-image: url('/assets/space.png');
-  opacity: .75;
+  opacity: 0.8;
+
   height: 140px;
   z-index: -1;
+
+  border-top: 2.6px solid #AF87AF;
+  border-bottom: 2.6px solid #AF87AF;
 }
 
 header{
-  font-family: raleway;
+  font-family: 'Sorts Mill Goudy', serif;
+  text-align: center;
   z-index: 1;
   height: 140px;
   margin-top: -140px;
-  border-bottom: 1px solid #AF87AF;
+
 
   h3{
-    padding-top: 12px;
+    padding-top: 54px;
+  }
+  h4{
+    font-size: 1.5em;
   }
   h3, h4{
     letter-spacing: .1em;
-    color: #F5F5F5;
+    color: lighten(#AF87AF, 30%);
     text-shadow: -1px 0 #1A1714,0 1px #1A1714,1px 0 #1A1714,0 -1px #1A1714;
   }
 }
 
 
+aside{
+  padding-top: 48.4px;
+  font-size: .9em;
+  text-align: right;
 
+  ul{
+    list-style-type: none;
+    li{
+      padding-top: 6px;
+      padding-bottom: 6px;
+      a{
+        color: darken(#AF87AF, 20%);
+        transition: .3s;
+        &:hover{
+          color: #1A1714;
+        }
+      }
+    }
+  }
+}
 
 main{
-
-
+  padding-top: 48px;
   height: 800px;
 
+  h1{
+    text-align: center;
+    font-size: 1.8em;
+    color: darken(#AF87AF, 30%);
+    letter-spacing: .1em;
 
+
+  }
+
+  .divider{
+    font-size: 2.5em;
+    color: darken(#AF87AF, 30%);
+    text-align: center;
+    margin: 0px;
+    margin-top: -30px;
+
+  }
+
+}
+
+article{
+
+  margin-top: 52px;
+
+  p{
+    color: #1A1714;
+    font-family: 'Sorts Mill Goudy', serif;
+  }
+
+  .tagline{
+    max-width: 100%;
+    text-align: center;
+    width: 520px;
+
+  }
 }
