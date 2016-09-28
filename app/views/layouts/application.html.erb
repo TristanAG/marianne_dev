@@ -11,30 +11,8 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row" id="header-header">
-        <div class="nine columns" style="text-align: left">
-          <p>Marianne B. Rowe, MS | Marriage & Family Therapist</p>
-        </div>
 
-        <div class="three columns" style="text-align: right">
-          <p>(831) 373 - 1017</p>
-        </div>
-      </div>
-    </div>
-    <div class="header-image">
-      
-    </div>
-
-    <header>
-
-      <div class="container">
-        <h3>Marianne B. Rowe, MS</h3>
-
-      </div>
-    </header>
-
-
+    <%= render 'layouts/header' %>
 
     <main>
       <div class="container">
@@ -46,19 +24,7 @@
       <div class="container">
         <div class="row">
           <div class="three columns">
-            <aside>
-              <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services and Specialties</a></li>
-              <li><a href="#">Fees, Forms, and Insurance</a></li>
-              <li><a href="#">Calendar of Events</a></li>
-              <li><a href="#">Mindfulness Courses</a></li>
-              <li><a href="#">Mindful Education Project</a></li>
-              <li><a href="#">Mindful Relating</a></li>
-              <li><a href="#">Questions for Reflection</a></li>
-              <li><a href="#">Location and Contact</a></li>
-              </ul>
-            </aside>
+            <%= render 'layouts/sidebar' %>
           </div>
           <div class="nine columns">
             <%= yield %>
