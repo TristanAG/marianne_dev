@@ -6,9 +6,37 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header-image">
+
+    </div>
+
+    <header>
+
+      <div class="container">
+        <h3>Marianne B. Rowe, MS</h3>
+        <h4>Marriage & Family Therapist</h4>
+      </div>
+    </header>
+
+
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="two columns">
+            <aside>
+              <p>sidebar</p>
+            </aside>
+          </div>
+          <div class="ten columns">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

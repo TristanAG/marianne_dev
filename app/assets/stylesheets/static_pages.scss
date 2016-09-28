@@ -1,3 +1,44 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  color:#AF87AF;
+  font-size: 1.7em;
+  font-family: 'Noto Serif', serif;
+}
+
+.header-image{
+  background-image: url('/assets/space.png');
+  opacity: .75;
+  height: 140px;
+  z-index: -1;
+}
+
+header{
+  font-family: raleway;
+  z-index: 1;
+  height: 140px;
+  margin-top: -140px;
+  border-bottom: 1px solid #AF87AF;
+
+  h3{
+    padding-top: 12px;
+  }
+  h3, h4{
+    letter-spacing: .1em;
+    color: #F5F5F5;
+    text-shadow: -1px 0 #1A1714,0 1px #1A1714,1px 0 #1A1714,0 -1px #1A1714;
+  }
+}
+
+
+
+
+main{
+
+
+  height: 800px;
+
+
+}
