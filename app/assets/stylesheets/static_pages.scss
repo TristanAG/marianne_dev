@@ -141,27 +141,31 @@ article{
 }
 
 
+/* nav controls!!!! */
+
 #nav-fixed{
   position:fixed;
   margin-top: -326px;
   overflow:hidden;
 }
 #nav-unfixed, #nav-fixed{
-
   width: 180px;
 }
-
 @media (max-width: 929px){
   #nav-unfixed, #nav-fixed{
-
+    width: 160px;
+  }
+}
+@media (max-width: 812px){
+  #nav-unfixed, #nav-fixed{
     width: 120px;
   }
 }
-
 /* turn into material button here */
 @media (max-width: 670px){
   #nav-fixed{
     background-color: lighten(#7b422f, 32%);
+    opacity: 0.8;
     width: 60px;
     height: 60px;
     border-radius: 50%;
