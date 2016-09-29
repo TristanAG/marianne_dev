@@ -139,3 +139,33 @@ article{
 
   }
 }
+
+
+#nav-fixed{
+  position:fixed;
+  margin-top: -326px;
+  overflow:hidden;
+}
+#nav-unfixed, #nav-fixed{
+
+  width: 180px;
+}
+
+@media (max-width: 929px){
+  #nav-unfixed, #nav-fixed{
+
+    width: 120px;
+  }
+}
+
+/* turn into material button here */
+@media (max-width: 670px){
+  #nav-fixed{
+    background-color: lighten(#7b422f, 32%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: -356px;
+    margin-left: -30px;
+  }
+}
