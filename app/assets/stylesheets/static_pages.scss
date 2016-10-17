@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$link: darken(#C1BCDB, 16%);
-$link-hover: #80749E;
+$link: darken(#C1BCDB, 24%);
+$link-hover: darken(#80749E, 18%);
 
 
 body{
 
   color: darken(#AF87AF, 30%);
-  background-color: lighten(#774849, 50%);
+  background-color: lighten(#774849, 52%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
@@ -59,24 +59,24 @@ header{
 
 
   h3{
-    padding-top: 100px;
+    padding-top: 74px;
     font-size: 2.7em;
   }
   h4{
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
   h3, h4{
     letter-spacing: .1em;
     color: lighten(#AF87AF, 30%);
-    text-shadow: -1px 0 #1A1714,0 1px #1A1714,1px 0 #1A1714,0 -1px #1A1714;
+    text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
 }
 
 
 aside{
   padding-top: 48.4px;
-  
-  margin-left: -90px;
+
+  margin-left: -80px;
 
   font-size: .76em;
   text-align: right;
@@ -99,23 +99,24 @@ aside{
 
 
       a{
-        padding-right: 6px;
+        padding-right: 8px;
 
         font-family: 'Sorts Mill Goudy', serif;
         font-size: 1.2em;
         text-decoration: none;
         /*color: darken(#AF87AF, 20%);*/
         color: $link;
-
+        border-right: 2px solid $link;
+        transition: .3s;
 
 
         &:hover{
 
           color: $link-hover;
-          text-decoration: none;
+
 
           padding-right: 3px;
-          border-right: 3px solid $link-hover;
+          border-right: 2px solid $link-hover;
         }
       }
     }
@@ -123,13 +124,15 @@ aside{
 }
 
 main{
-  padding-top: 48px;
+  padding-top: 28px;
   height: 800px;
 
   h1{
-    text-align: left;
+    margin-top: -33px;
+    margin-bottom: 28px;
+    text-align: center;
     font-size: 1.6em;
-    color: lighten(#1A1714, 26%);
+    color: $link;
     letter-spacing: .1em;
 
 
