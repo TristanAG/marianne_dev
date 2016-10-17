@@ -2,26 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$link: darken(#C1BCDB, 16%);
+$link-hover: #80749E;
+
+
 body{
-  margin-top: 12px;
+
   color: darken(#AF87AF, 30%);
+  background-color: lighten(#774849, 50%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
 }
 
-#header-header{
-
-
-  .phone-number{
-
-  }
-  p{
-    font-size: 1em;
-    margin-bottom: 12px;
-    color: lighten(#7b422f, 12%);
-  }
-}
 
 hr{
   margin: 0px;
@@ -40,7 +33,7 @@ h1{
   background-image: url('/assets/space.png');
   opacity: 0.9;
 
-  height: 140px;
+  height: 250px;
   z-index: -1;
 
   border-top: 2.6px solid #AF87AF;
@@ -48,16 +41,26 @@ h1{
 }
 
 header{
+
+  background-image: url('/assets/space.png');
+  opacity: 0.9;
+
+  height: 250px;
+  z-index: -1;
+
+  border-top: 2.6px solid #AF87AF;
+  border-bottom: 2.6px solid #AF87AF;
+
+
   font-family: 'Sorts Mill Goudy', serif;
   text-align: center;
   z-index: 1;
-  height: 140px;
-  margin-top: -140px;
+
 
 
   h3{
-    padding-top: 54px;
-    font-size: 2.1em;
+    padding-top: 100px;
+    font-size: 2.7em;
   }
   h4{
     font-size: 1.5em;
@@ -72,8 +75,19 @@ header{
 
 aside{
   padding-top: 48.4px;
+  
+  margin-left: -90px;
+
   font-size: .76em;
-  text-align: left;
+  text-align: right;
+
+  #nav-unfixed, #nav-fixed{
+    /*border-right: 1px solid $link;*/
+
+
+    width: 220px;
+
+  }
 
   ul{
     list-style-type: none;
@@ -81,18 +95,27 @@ aside{
       padding-top: 6px;
       padding-bottom: 6px;
 
+
+
+
       a{
+        padding-right: 6px;
+
         font-family: 'Sorts Mill Goudy', serif;
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-decoration: none;
         /*color: darken(#AF87AF, 20%);*/
-        color: lighten(#7b422f, 12%);
-        transition: .3s;
+        color: $link;
+
+
+
         &:hover{
-          background-color: lighten(#7b422f, 12%);
-          color: white;
+
+          color: $link-hover;
           text-decoration: none;
-          border-radius: 4px;
+
+          padding-right: 3px;
+          border-right: 3px solid $link-hover;
         }
       }
     }
@@ -104,7 +127,7 @@ main{
   height: 800px;
 
   h1{
-    text-align: center;
+    text-align: left;
     font-size: 1.6em;
     color: lighten(#1A1714, 26%);
     letter-spacing: .1em;
