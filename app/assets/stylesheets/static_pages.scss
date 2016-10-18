@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$link: darken(#C1BCDB, 20%);
-$link-hover: darken(#80749E, 18%);
+$link: darken(#C1BCDB, 40%);
+$link-hover: darken(#80749E, 38%);
 
 
 body{
 
   color: darken(#AF87AF, 30%);
-  background-color: lighten(#774849, 52%);
+  background-color: lighten(#774849, 40%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
@@ -120,7 +120,7 @@ aside{
         font-family: 'Sorts Mill Goudy', serif;
         font-size: 1.2em;
         text-decoration: none;
-        
+
         /*color: darken(#AF87AF, 20%);*/
         color: $link;
         border-right: 2px solid $link;
@@ -134,7 +134,7 @@ aside{
           color: $link-hover;
 
 
-
+          background-color: lightgray;
           padding-right: 3px;
           border-right: 2px solid $link-hover;
         }
