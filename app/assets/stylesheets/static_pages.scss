@@ -9,10 +9,17 @@ $link-hover: darken(#80749E, 38%);
 body{
 
   color: darken(#AF87AF, 30%);
-  background-color: lighten(#774849, 40%);
+  /*background-color: lighten(#774849, 40%);*/
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
+  // background: #fce1e0; /* Old browsers */
+  // background: -moz-linear-gradient(top, #fce1e0 0%, #fddedb 41%, #f9bfbb 70%, #fec7bc 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1e0', endColorstr='#fec7bc',GradientType=0 ); /* IE6-9 */
 }
 
 
@@ -48,8 +55,8 @@ header{
   height: 250px;
   z-index: -1;
 
-  border-top: 2.6px solid #AF87AF;
-  border-bottom: 2.6px solid #AF87AF;
+  border-top: 1px solid #AF87AF;
+  border-bottom: 1px solid #AF87AF;
 
 
 
@@ -58,12 +65,12 @@ header{
   #name{
     opacity: 1;
     /*font-family: 'Sorts Mill Goudy', serif;*/
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
+    font-family: 'Sorts Mill Goudy', serif;
+    text-align: center;
 
   }
   h3{
-    padding-top: 74px;
+    padding-top: 24px;
     font-size: 2.7em;
     margin-bottom: -4px;
   }
@@ -72,15 +79,15 @@ header{
   }
   h3, h4{
     letter-spacing: .1em;
-    color: lighten($link, 20%);
+    color: white;
 
 
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
   #summary{
-    margin-top: -16px;
+    margin-top: 90px;
     letter-spacing: .1em;
-    color: lighten($link, 30%);
+    color: lighten($link, 50%);
     font-size: .9em;
 
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
@@ -134,7 +141,7 @@ aside{
           color: $link-hover;
 
 
-        
+
           padding-right: 3px;
           border-right: 2px solid $link-hover;
         }
