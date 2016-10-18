@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$link: darken(#C1BCDB, 24%);
+$link: darken(#C1BCDB, 20%);
 $link-hover: darken(#80749E, 18%);
 
 
@@ -31,7 +31,7 @@ h1{
 .header-image{
 
   background-image: url('/assets/space.png');
-  opacity: 0.9;
+
 
   height: 250px;
   z-index: -1;
@@ -43,7 +43,7 @@ h1{
 header{
 
   background-image: url('/assets/space.png');
-  opacity: 0.9;
+
 
   height: 250px;
   z-index: -1;
@@ -52,28 +52,44 @@ header{
   border-bottom: 2.6px solid #AF87AF;
 
 
-  font-family: 'Sorts Mill Goudy', serif;
-  text-align: center;
+
   z-index: 1;
 
+  #name{
+    opacity: 1;
+    /*font-family: 'Sorts Mill Goudy', serif;*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
 
-
+  }
   h3{
     padding-top: 74px;
     font-size: 2.7em;
+    margin-bottom: -4px;
   }
   h4{
     font-size: 1.9em;
   }
   h3, h4{
     letter-spacing: .1em;
-    color: lighten(#AF87AF, 30%);
+    color: lighten($link, 20%);
+
+
+    text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
+  }
+  #summary{
+    margin-top: -16px;
+    letter-spacing: .1em;
+    color: lighten($link, 30%);
+    font-size: .9em;
+
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
 }
 
 
 aside{
+  font-family: 'Montserrat', sans-serif;
   padding-top: 48.4px;
 
   margin-left: -80px;
@@ -104,15 +120,19 @@ aside{
         font-family: 'Sorts Mill Goudy', serif;
         font-size: 1.2em;
         text-decoration: none;
+        
         /*color: darken(#AF87AF, 20%);*/
         color: $link;
         border-right: 2px solid $link;
         transition: .3s;
 
 
+
+
         &:hover{
 
           color: $link-hover;
+
 
 
           padding-right: 3px;
@@ -130,7 +150,7 @@ main{
   h1{
     margin-top: -33px;
     margin-bottom: 28px;
-    text-align: center;
+    text-align: left;
     font-size: 1.6em;
     color: $link;
     letter-spacing: .1em;
@@ -162,8 +182,8 @@ article{
   .tagline{
     font-size: .88em;
     max-width: 100%;
-    text-align: center;
-    width: 520px;
+    text-align: left;
+    /*width: 520px;*/
 
   }
 }
