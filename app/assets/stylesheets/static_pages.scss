@@ -2,14 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$link: darken(#C1BCDB, 40%);
+$link: darken(#C1BCDB, 20%);
 $link-hover: darken(#80749E, 38%);
 
 
 body{
 
   color: darken(#AF87AF, 30%);
-  /*background-color: lighten(#774849, 40%);*/
+  background-color: lighten(#774849, 48%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
