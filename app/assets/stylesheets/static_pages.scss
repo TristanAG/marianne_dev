@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $link: darken(#C1BCDB, 20%);
-$link-hover: darken(#80749E, 38%);
+$link-hover: darken(#80749E, 32%);
 
 
 body{
@@ -29,7 +29,7 @@ hr{
 }
 
 h1{
-  margin: 8px;
+  margin-bottom: 8px;
 
 }
 
@@ -159,11 +159,17 @@ main{
     margin-top: -33px;
     margin-bottom: 28px;
     text-align: left;
-    font-size: 1.6em;
-    color: $link;
+    font-size: 1.85em;
+    color: $link-hover;
     letter-spacing: .1em;
 
 
+  }
+
+  h2{
+    font-size: 1.35em;
+    color: $link-hover;
+    letter-spacing: .1em;
   }
 
   .divider{
@@ -182,7 +188,7 @@ article{
   margin-top: 82px;
   padding-bottom: 50px;
 
-  p{
+  p, li{
     color: #1A1714;
     font-family: 'Sorts Mill Goudy', serif;
   }
