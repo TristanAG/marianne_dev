@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
 
   <body>
@@ -25,7 +25,9 @@
             <%= render 'layouts/sidebar' %>
           </div>
           <div class="nine columns">
-            <%= yield %>
+            <article>
+              <%= yield %>
+            </article>
           </div>
         </div>
       </div>
