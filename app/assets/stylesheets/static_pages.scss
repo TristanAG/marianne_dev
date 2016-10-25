@@ -2,14 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$link: darken(#C1BCDB, 20%);
+$link: darken(#C1BCDB, 34%);
 $link-hover: darken(#80749E, 32%);
-
+// $link: #c4372d;
+// $link-hover: black;
 
 body{
 
   color: darken(#AF87AF, 30%);
-  background-color: lighten(#774849, 49%);
+  // background-color: lighten(#774849, 49%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
@@ -32,25 +33,14 @@ hr{
 
 
 
-.header-image{
 
-  background-image: url('/assets/space.png');
-
-
-  height: 250px;
-  width: 200px;
-  z-index: -1;
-
-  border-top: 2.6px solid #AF87AF;
-  border-bottom: 2.6px solid #AF87AF;
-}
 
 header{
 
   background-image: url('/assets/space.png');
+  opacity: .8;
 
-
-  height: 250px;
+  height: 230px;
   z-index: -1;
 
   border-top: 1px solid #AF87AF;
@@ -59,6 +49,12 @@ header{
 
 
   z-index: 1;
+
+
+}
+
+#header-content{
+  margin-top: -240px;
 
   #name{
     opacity: 1;
@@ -83,10 +79,10 @@ header{
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
   #summary{
-    margin-top: 90px;
+    margin-top: 64px;
     letter-spacing: .1em;
-    color: lighten($link, 50%);
-    font-size: .9em;
+    color: white;
+    font-size: 1.1em;
 
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
@@ -151,7 +147,7 @@ aside{
 main{
 
   height: 800px;
-  margin-top: -20px;
+  margin-top: 0px;
 
   h1{
     margin-top: -33px;
@@ -187,7 +183,7 @@ article{
   padding-bottom: 50px;
 
   p, li{
-    color: #1A1714;
+    color: #3e4042;
     font-family: 'Arimo', sans-serif;
     font-size: .9em;
   }
