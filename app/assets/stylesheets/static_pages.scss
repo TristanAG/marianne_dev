@@ -9,7 +9,7 @@ $link-hover: darken(#80749E, 32%);
 body{
 
   color: darken(#AF87AF, 30%);
-  background-color: lighten(#774849, 48%);
+  background-color: lighten(#774849, 49%);
   /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
@@ -28,10 +28,7 @@ hr{
   padding: 0px;
 }
 
-h1{
-  margin-bottom: 8px;
 
-}
 
 
 
@@ -97,8 +94,8 @@ header{
 
 
 aside{
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 48.4px;
+  font-family: 'Sorts Mill Goudy', serif;
+  padding-top: 106px;
 
   margin-left: -60px;
 
@@ -152,15 +149,16 @@ aside{
 }
 
 main{
-  padding-top: 28px;
+
   height: 800px;
+  margin-top: -20px;
 
   h1{
     margin-top: -33px;
     margin-bottom: 28px;
     text-align: left;
     font-size: 1.85em;
-    color: $link-hover;
+    color: darken($link, 10%);
     letter-spacing: .1em;
 
 
@@ -190,7 +188,7 @@ article{
 
   p, li{
     color: #1A1714;
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Arimo', sans-serif;
     font-size: .9em;
   }
 
