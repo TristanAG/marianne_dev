@@ -1,70 +1,42 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
 $link: darken(#C1BCDB, 34%);
 $link-hover: darken(#80749E, 32%);
-// $link: #c4372d;
-// $link-hover: black;
+$text-color: #3e4042;
+$special-font: 'Sorts Mill Goudy', serif;
+$main-font: 'Arimo', sans-serif;
+$page-title-color: darken($link, 10%);
 
 body{
-
-  color: darken(#AF87AF, 30%);
+  color: $text-color;
   background-color: lighten(#774849, 53%);
-  /*color: #1A1714; <= main black color */
   font-size: 1.7em;
   font-family: 'Noto Serif', serif;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
-  // background: #fce1e0; /* Old browsers */
-  // background: -moz-linear-gradient(top, #fce1e0 0%, #fddedb 41%, #f9bfbb 70%, #fec7bc 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(top, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to bottom, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1e0', endColorstr='#fec7bc',GradientType=0 ); /* IE6-9 */
+   background: #fce1e0; /* Old browsers */
+   background: -moz-linear-gradient(top, #fce1e0 0%, #fddedb 41%, #f9bfbb 70%, #fec7bc 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(top, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to bottom, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1e0', endColorstr='#fec7bc',GradientType=0 ); /* IE6-9 */
 }
-
-
-hr{
-  margin: 0px;
-  padding: 0px;
-}
-
-
-
-
-
-
 
 header{
-
   background-image: url('/assets/space.png');
   opacity: .86;
-
-  height: 230px;
-  z-index: -1;
-
-  border-top: 1px solid #AF87AF;
-  border-bottom: 1px solid #AF87AF;
-
-
-
+  height: 244px;
+  border-top: 2px solid #AF87AF;
+  border-bottom: 2px solid #AF87AF;
   z-index: 1;
-
-
 }
 
 #header-content{
   margin-top: -240px;
 
   #name{
-    opacity: 1;
-    /*font-family: 'Sorts Mill Goudy', serif;*/
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: $special-font;
     text-align: center;
-
   }
   h3{
-    padding-top: 24px;
+    padding-top: 15px;
     font-size: 2.7em;
     margin-bottom: -4px;
   }
@@ -74,8 +46,6 @@ header{
   h3, h4{
     letter-spacing: .1em;
     color: white;
-
-
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
   #summary{
@@ -83,27 +53,19 @@ header{
     letter-spacing: .1em;
     color: white;
     font-size: 1.1em;
-
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
 }
 
-
 aside{
-  font-family: 'Sorts Mill Goudy', serif;
-  padding-top: 106px;
-
+  font-family: $special-font;
+  padding-top: 122px;
   margin-left: -60px;
-
-  font-size: .76em;
+  font-size: .80em;
   text-align: right;
 
   #nav-unfixed, #nav-fixed{
-    /*border-right: 1px solid $link;*/
-
-
     width: 220px;
-
   }
 
   ul{
@@ -111,31 +73,16 @@ aside{
     li{
       padding-top: 6px;
       padding-bottom: 6px;
-
-
-
-
       a{
         padding-right: 8px;
-
-        font-family: 'Sorts Mill Goudy', serif;
+        font-family: $special-font;
         font-size: 1.2em;
         text-decoration: none;
-
-        /*color: darken(#AF87AF, 20%);*/
         color: $link;
         border-right: 2px solid $link;
         transition: .3s;
-
-
-
-
         &:hover{
-
           color: $link-hover;
-
-
-
           padding-right: 3px;
           border-right: 2px solid $link-hover;
         }
@@ -145,19 +92,14 @@ aside{
 }
 
 main{
-
-  height: 800px;
-  margin-top: 0px;
-
   h1{
+    font-family: $special-font;
     margin-top: -33px;
     margin-bottom: 28px;
     text-align: left;
-    font-size: 1.85em;
-    color: darken($link, 10%);
+    font-size: 2.24em;
+    color: $page-title-color;
     letter-spacing: .1em;
-
-
   }
 
   h2{
@@ -166,47 +108,27 @@ main{
     letter-spacing: .1em;
   }
 
+  article{
+    font-family: $main-font;
+    color: $text-color;
+    font-size: .9em;
+    margin-top: 90px;
+    padding-bottom: 50px;
+  }
+
   .divider{
     font-size: 2.5em;
-    color: darken(#AF87AF, 30%);
+    color: $page-title-color;
     text-align: center;
     margin: 0px;
     margin-top: -30px;
-
-  }
-
-}
-
-article{
-
-  margin-top: 82px;
-  padding-bottom: 50px;
-
-  p, li{
-    color: #3e4042;
-    font-family: 'Arimo', sans-serif;
-    font-size: .9em;
-  }
-
-  .tagline{
-    font-size: .88em;
-    max-width: 100%;
-    text-align: left;
-    /*width: 520px;*/
-
   }
 }
-
-
 /* nav controls!!!! */
-
 #nav-fixed{
   position:fixed;
   margin-top: -300px;
   overflow:hidden;
-}
-#nav-unfixed, #nav-fixed{
-  width: 180px;
 }
 @media (max-width: 929px){
   #nav-unfixed, #nav-fixed{
@@ -218,7 +140,6 @@ article{
     width: 120px;
   }
 }
-/* turn into material button here */
 @media (max-width: 670px){
   #nav-fixed{
     background-color: lighten(#7b422f, 32%);
