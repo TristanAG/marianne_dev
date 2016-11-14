@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'simple_calendar', '~> 2.0'
 gem 'rails',        '5.0.0.1'
