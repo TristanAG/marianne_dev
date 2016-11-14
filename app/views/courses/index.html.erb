@@ -27,3 +27,22 @@
 <br>
 
 <%= link_to 'New Course', new_course_path %>
+
+<%= month_calendar events: @courses do |date, courses| %>
+
+  <div style="width:44px">
+    <span class="day"><%= date.day %></span>
+  </div>
+
+
+
+  <% courses.each do |course| %>
+    <div>
+      <%= link_to course.name, course %>
+    </div>
+  <% end %>
+
+
+
+<% end %>
+Contact GitHub API Training Shop Blog About

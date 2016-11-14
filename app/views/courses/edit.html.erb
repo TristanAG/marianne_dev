@@ -2,5 +2,8 @@
 
 <%= render 'form', course: @course %>
 
-<%= link_to 'Show', @course %> |
+
+<%= link_to 'Edit', @course %>
+<%= link_to 'Destroy', @course, method: :delete, data: { confirm: 'Are you sure?' } %>
+
 <%= link_to 'Back', courses_path %>
