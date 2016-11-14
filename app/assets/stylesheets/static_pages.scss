@@ -7,9 +7,17 @@ $page-title-color: darken($link, 10%);
 
 body{
   color: $text-color;
-  background-color: lighten(#774849, 53%);
+  /*background-color: lighten(#774849, 53%);*/
   font-size: 1.7em;
-  font-family: 'Noto Serif', serif;
+  font-family: $main-font;
+
+  a{
+    color: $link;
+    transition: .3s;
+    &:hover{
+      color: $link-hover;
+    }
+  }
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
    background: #fce1e0; /* Old browsers */
@@ -79,12 +87,12 @@ aside{
         font-size: 1.2em;
         text-decoration: none;
         color: $link;
-        border-right: 2px solid $link;
-        transition: .3s;
+        border-right: 1px solid $link;
+        // transition: .3s;
         &:hover{
           color: $link-hover;
           padding-right: 3px;
-          border-right: 2px solid $link-hover;
+          border-right: 1px solid $link-hover;
         }
       }
     }
