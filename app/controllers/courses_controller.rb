@@ -26,6 +26,17 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params)
 
+    course_time = [
+      @course.start_time_1,
+      @course.start_time_2,
+      @course.start_time_3
+    ]
+
+    @course.course_instances.times do |i|
+      @course = Course.new({name: @course.name, start_time: course_time[i]})
+      @course.save
+    end
+
     respond_to do |format|
       if @course.save
         format.html { redirect_to @course, notice: 'Course was successfully created.' }
@@ -69,6 +80,6 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:name, :start_time)
+      params.require(:course).permit(:name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
     end
 end
