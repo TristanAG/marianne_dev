@@ -8,13 +8,20 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
-  
+
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
   </head>
 
   <body>
-
-    <%= render 'layouts/header' %>
+    <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <% if user_signed_in? %>
+      <p>admin section</p>
+      <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+    <% else %>
+      <p><%= link_to 'Sign in', new_user_session_path %></p>
+      <%= render 'layouts/header' %>
+    <% end %>
 
     <main>
       <div class="container">
@@ -24,6 +31,7 @@
           </div>
           <div class="nine columns">
             <article>
+
               <%= yield %>
             </article>
           </div>
