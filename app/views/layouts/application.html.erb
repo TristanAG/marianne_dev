@@ -13,13 +13,18 @@
   </head>
 
   <body>
-    <p class="alert"><%= alert %></p>
-    <p class="notice"><%= notice %></p>
+    <!-- <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p> -->
     <% if user_signed_in? %>
-      <p>admin section</p>
-      <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+      <div id="admin-panel">
+        <div class="container">
+          <p>Hi, Marianne</p>
+          <p>To create a new course, click here: <%= link_to 'New Course', mindfulnesscourses_new_path %></p>
+          <p>If you would like to delete a course, locate it on the calendar and select 'edit' then 'delete'</p>
+          <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+        </div>
+      </div>
     <% else %>
-      <p><%= link_to 'Sign in', new_user_session_path %></p>
       <%= render 'layouts/header' %>
     <% end %>
 

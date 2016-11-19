@@ -5,6 +5,8 @@ $special-font: 'Sorts Mill Goudy', serif;
 $main-font: 'Arimo', sans-serif;
 $page-title-color: darken($link, 10%);
 
+
+
 body{
   color: $text-color;
   /*background-color: lighten(#774849, 53%);*/
@@ -17,6 +19,11 @@ body{
     &:hover{
       color: $link-hover;
     }
+  }
+
+  #admin-panel{
+    height: 244px;
+    background-color: white;
   }
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
