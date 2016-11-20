@@ -1,0 +1,29 @@
+<article>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Calendar of Events</h1>
+
+<%= month_calendar events: @courses do |date, courses| %>
+
+  <div style="width:44px">
+    <span class="day"><%= date.day %></span>
+  </div>
+
+
+
+  <% courses.each do |course| %>
+    <div>
+      <% if course.course_type == "mindfulness course" %>
+        <%= link_to course.name, course %>
+      <% end %>
+    </div>
+  <% end %>
+
+
+
+<% end %>
+
+<%= link_to 'New Course', mindfulnesscourses_new_path %>
+
+</article>

@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get '/mindful-education-project', to: 'static_pages#mindful_education_project'
 
   get '/mindfulnesscourses', to: 'courses#index'
+  get '/calendarofevents', to: 'courses#calendar'
   #need to first implement friendly_id
   get '/mindfulnesscourses/new', to: 'courses#new'
   get '/mindfulnesscourses/edit', to: 'courses#edit'
