@@ -170,3 +170,10 @@ main{
 .radioset{
   white-space: nowrap;
 }
+
+button, input[type="submit"]{
+  background-color: white;
+}
+button:hover, input[type="submit"]:hover{
+  background-color: lightgray;
+}

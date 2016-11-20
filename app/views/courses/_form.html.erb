@@ -58,18 +58,19 @@
     <% end %>
 
     <div class="field">
-
-      <%= f.radio_button :course_type, "mindfulness course" %> Mindfunless Course
-
-      <%= f.radio_button :course_type, "mep course" %> MEP Course
-
-    </div>
-
-    <div class="field">
-      <%= f.label :name %>
+      <%= f.label "Course Name:" %>
       <%= f.text_field :name %>
     </div>
 
+    <div class="field">
+      <%= f.label "Type of Course:" %>
+      <%= f.radio_button :course_type, "mindfulness course" %> &nbsp;Mindfunless Course &nbsp;
+      <%= f.radio_button :course_type, "mep course" %> &nbsp;MEP Course &nbsp;
+    </div>
+
+
+
+    <!-- don't show up in the edit action - just the 'new' action -->
     <% if !current_page?(controller: 'courses', action: 'new') %>
       <div class="field" id="1">
         <%= f.label :start_time %>
