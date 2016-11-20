@@ -33,7 +33,7 @@ class CoursesController < ApplicationController
     ]
 
     @course.course_instances.times do |i|
-      @course = Course.new({name: @course.name, start_time: course_time[i], test: @course.test})
+      @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type})
       @course.save
     end
 
@@ -80,6 +80,6 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
+      params.require(:course).permit(:course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
     end
 end

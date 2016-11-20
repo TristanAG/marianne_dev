@@ -58,8 +58,11 @@
     <% end %>
 
     <div class="field">
-      <%= f.check_box :test %>
-      <%= f.label :test %>
+
+      <%= f.radio_button :course_type, "mindfulness course" %> Mindfunless Course
+
+      <%= f.radio_button :course_type, "mep course" %> MEP Course
+
     </div>
 
     <div class="field">
