@@ -6,7 +6,7 @@ class CoursesController < ApplicationController
   # GET /courses.json
 
   def index
-    :fetch_all_courses
+    @courses = Course.all.where(:first_instance => true)
   end
 
   def calendar
@@ -39,6 +39,12 @@ class CoursesController < ApplicationController
     ]
 
     @course.course_instances.times do |i|
+      #flag the first_instance as unique for displaying in a list
+      if i == 1
+        @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type, first_instance: true })
+        @course.save
+      end
+
       @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type})
       @course.save
     end
@@ -86,7 +92,7 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
+      params.require(:course).permit(:first_instance, :course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
     end
 
   protected
