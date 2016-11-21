@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121003706) do
+ActiveRecord::Schema.define(version: 20161121020322) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "name"
     t.datetime "start_time"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.datetime "start_time_1"
     t.datetime "start_time_2"
     t.datetime "start_time_3"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20161121003706) do
     t.boolean  "test"
     t.string   "course_type"
     t.boolean  "first_instance"
+    t.boolean  "include_in_calendar"
   end
 
   create_table "users", force: :cascade do |t|

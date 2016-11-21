@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#index'
 
+  get '/admin', to: 'courses#admin_index'
+
   get '/services-and-specialties', to: 'static_pages#services_and_specialties'
   get '/fees-forms-and-insurance', to: 'static_pages#fees_forms_and_insurance'
 

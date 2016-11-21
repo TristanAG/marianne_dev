@@ -1,0 +1,27 @@
+<h1>Admin Index</h1>
+
+<h2>Mindfulness Courses</h2>
+<% @mindfulness_courses.each do |course| %>
+  <p>
+    <%= course.name %>
+    <br>
+    <%= course.start_time.month %> / <%= course.start_time.day %>
+    <br>
+    first instance? <%= course.first_instance %>
+    <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+  </p>
+<% end %>
+
+<h2>MEP Courses</h2>
+<% @mep_courses.each do |course| %>
+  <p>
+    <%= course.name %>
+    <br>
+    <%= course.start_time.month %> / <%= course.start_time.day %>
+    <br>
+    first instance? <%= course.first_instance %>
+    <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+  </p>
+<% end %>

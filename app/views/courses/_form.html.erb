@@ -64,8 +64,12 @@
 
     <div class="field">
       <%= f.label "Type of Course:" %>
-      <%= f.radio_button :course_type, "mindfulness course" %> &nbsp;Mindfunless Course &nbsp;
-      <%= f.radio_button :course_type, "mep course" %> &nbsp;MEP Course &nbsp;
+      Mindfunless Course <%= f.radio_button :course_type, "mindfulness course" %> &nbsp; &nbsp;
+      MEP Course <%= f.radio_button :course_type, "mep course" %>
+    </div>
+
+    <div class="field">
+      Show in Calendar? &nbsp;<%= f.check_box :include_in_calendar %>
     </div>
 
 
