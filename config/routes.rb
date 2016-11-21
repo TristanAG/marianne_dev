@@ -12,10 +12,11 @@ Rails.application.routes.draw do
 
   get '/services-and-specialties', to: 'static_pages#services_and_specialties'
   get '/fees-forms-and-insurance', to: 'static_pages#fees_forms_and_insurance'
-  get '/mindful-education-project', to: 'static_pages#mindful_education_project'
+
 
   get '/mindfulnesscourses', to: 'courses#index'
   get '/calendarofevents', to: 'courses#calendar'
+  get '/mindful-education-project', to: 'courses#mep_index'
   #need to first implement friendly_id
   get '/mindfulnesscourses/new', to: 'courses#new'
   get '/mindfulnesscourses/edit', to: 'courses#edit'

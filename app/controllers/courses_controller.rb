@@ -6,8 +6,14 @@ class CoursesController < ApplicationController
   # GET /courses.json
 
   def index
-    @courses = Course.all.where(:first_instance => true)
+    @courses = Course.all.where(:first_instance => true, :course_type => "mindfulness course")
   end
+
+  def mep_index
+    @courses = Course.all.where(:first_instance => true, :course_type => "mep course")
+  end
+
+
 
   def calendar
     :fetch_all_courses
@@ -40,13 +46,13 @@ class CoursesController < ApplicationController
 
     @course.course_instances.times do |i|
       #flag the first_instance as unique for displaying in a list
-      if i == 1
+      if i == 0
         @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type, first_instance: true })
         @course.save
+      elsif i > 0
+        @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type})
+        @course.save
       end
-
-      @course = Course.new({name: @course.name, start_time: course_time[i], course_type: @course.course_type})
-      @course.save
     end
 
     respond_to do |format|
