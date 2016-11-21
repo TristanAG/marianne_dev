@@ -1,14 +1,16 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
+  before_filter :fetch_all_courses, :only => [:index, :calendar]
 
   # GET /courses
   # GET /courses.json
+
   def index
-    @courses = Course.all
+    :fetch_all_courses
   end
 
   def calendar
-    @courses = Course.all
+    :fetch_all_courses
   end
 
   # GET /courses/1
@@ -85,5 +87,11 @@ class CoursesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
       params.require(:course).permit(:course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
+    end
+
+  protected
+
+    def fetch_all_courses
+      @courses = Course.all
     end
 end

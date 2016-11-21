@@ -4,6 +4,12 @@
 
 <h1>Mindfulness Courses</h1>
 
-
+<% @courses.each do |course| %>
+  <p>
+    <%= course.name %>
+    <br>
+    <%= course.start_time.month %> / <%= course.start_time.day %> 
+  </p>
+<% end %>
 
 </article>
