@@ -7,7 +7,11 @@
     <br>
     <%= course.start_time.month %> / <%= course.start_time.day %>
     <br>
-    first instance? <%= course.first_instance %>
+    <% if course.first_instance %>
+      First Instance
+      <br>
+    <% end %>
+
     <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
 
   </p>
@@ -20,7 +24,11 @@
     <br>
     <%= course.start_time.month %> / <%= course.start_time.day %>
     <br>
-    first instance? <%= course.first_instance %>
+    <% if course.first_instance %>
+      First Instance
+      <br>
+    <% end %>
+
     <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
 
   </p>
