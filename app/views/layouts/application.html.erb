@@ -18,10 +18,16 @@
     <% if user_signed_in? %>
       <div id="admin-panel">
         <div class="container">
-          <p>Hi, Marianne</p>
-          <p>To create a new course, click here: <%= link_to 'New Course', mindfulnesscourses_new_path %></p>
-          <p>If you would like to delete a course, locate it on the calendar and select 'edit' then 'delete'</p>
-          <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p>
+          <br>
+          <h1>Hi, Marianne</h1>
+          <%= link_to 'List All Courses', admin_path %>
+          <br>
+          <%= link_to 'New Course', mindfulnesscourses_new_path %>
+          <br>
+          <br>
+          <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+          <br>
+          Contact <a href="#">Tristan</a> for assistance
         </div>
       </div>
     <% else %>

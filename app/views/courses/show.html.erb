@@ -21,5 +21,9 @@
   <%= @course.start_time %>
 </p>
 
+<% if user_signed_in? %>
+
 <%= link_to 'Edit', edit_course_path(@course) %> |
 <%= link_to 'Back', courses_path %>
+
+<% end %>

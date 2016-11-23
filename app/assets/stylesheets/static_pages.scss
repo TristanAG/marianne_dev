@@ -10,12 +10,23 @@ $page-title-color: darken($link, 10%);
 body{
   color: $text-color;
   /*background-color: lighten(#774849, 53%);*/
-  font-size: 1.7em;
+  font-size: 1.6em;
   font-family: $main-font;
+
+  h1{
+    font-family: $special-font;
+    margin-top: -06px;
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 2.24em;
+    color: $text-color;
+    letter-spacing: .1em;
+  }
 
   a{
     color: $link;
     transition: .3s;
+    font-size: .9em;
     &:hover{
       color: $link-hover;
     }
@@ -24,6 +35,7 @@ body{
   #admin-panel{
     height: 244px;
     background-color: white;
+
   }
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
@@ -121,6 +133,11 @@ main{
     font-size: 1.35em;
     color: $link-hover;
     letter-spacing: .1em;
+  }
+
+  
+  #course_course_instances{
+    visibility: hidden;
   }
 
   article{

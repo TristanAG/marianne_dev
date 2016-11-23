@@ -58,13 +58,13 @@
     <% end %>
 
     <div class="field">
-      <%= f.label "Course Name:" %>
+      Course Name:
+      <br>
       <%= f.text_field :name %>
     </div>
 
     <div class="field">
-      <%= f.label "Type of Course:" %>
-      Mindfunless Course <%= f.radio_button :course_type, "mindfulness course" %> &nbsp; &nbsp;
+      Type of Course:<br>Mindfunless Course <%= f.radio_button :course_type, "mindfulness course" %> &nbsp; &nbsp;
       MEP Course <%= f.radio_button :course_type, "mep course" %>
     </div>
 
@@ -107,16 +107,14 @@
       <button id="subtract-button"><h4>-</h4></button>
     <% end %>
 
-
+    <%= f.text_field :course_instances %>
 
     <div class="actions">
       <%= f.submit %>
     </div>
 
-    <div class="hidden-element" >
-      <%= f.label :course_instances %>
-      <%= f.text_field :course_instances %>
-    </div>
+
+
   <% end %>
 
 </div>
