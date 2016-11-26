@@ -47,13 +47,16 @@ body{
 }
 
 header{
-  background-image: image-url('space.png');
-  opacity: .86;
+  background-image: image-url('space.jpg');
+  opacity: .7;
   height: 244px;
+
   border-top: 2px solid #AF87AF;
   border-bottom: 2px solid #AF87AF;
   z-index: 1;
 }
+
+
 
 #header-content{
   margin-top: -240px;
@@ -72,13 +75,13 @@ header{
   }
   h3, h4{
     letter-spacing: .1em;
-    color: white;
+    color: lighten($text-color, 80%);
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
   #summary{
     margin-top: 64px;
     letter-spacing: .1em;
-    color: white;
+    color: lighten($text-color, 80%);
     font-size: 1.1em;
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
@@ -219,18 +222,10 @@ button:hover, input[type="submit"]:hover{
 
     #menu-button-button{
       cursor: pointer;
-
       &:hover{
         color: $link;
       }
     }
-
-
-    // background-color: lighten($link, 48%);
-    // border-radius: 4px;
-    // border: 1px solid lighten($link, 28%);
-
-
 
     hr{
       margin-top: 2px;
@@ -248,13 +243,11 @@ button:hover, input[type="submit"]:hover{
       color: $link;
       transition: .3s;
 
-      &:hover{
-        color: $link-hover;
-
-
+        &:hover{
+          color: $link-hover;
+        }
       }
     }
-  }
   }
 
   main{
@@ -265,7 +258,6 @@ button:hover, input[type="submit"]:hover{
     }
   }
   #nav-mobile{
-
     text-align: center;
   }
 }
