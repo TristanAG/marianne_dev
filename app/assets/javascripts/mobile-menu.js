@@ -3,10 +3,10 @@ $( document ).on('turbolinks:load', function() {
   visible = false
   $( '#menu-button' ).click(function () {
     if(!visible){
-      $( '#mobile-menu' ).show();
+      $( '#mobile-menu' ).slideDown( 'slow' );
       visible = true
     } else {
-      $( '#mobile-menu' ).hide();
+      $( '#mobile-menu' ).slideUp( 'slow' );
       visible = false
     }
   })
