@@ -241,6 +241,7 @@ button:hover, input[type="submit"]:hover{
 
         &:hover{
           color: $link-hover;
+          
         }
       }
     }
@@ -255,5 +256,7 @@ button:hover, input[type="submit"]:hover{
   }
   #nav-mobile{
     text-align: center;
+    background-color: white;
+
   }
 }
