@@ -5,11 +5,9 @@ $special-font: 'Sorts Mill Goudy', serif;
 $main-font: 'Arimo', sans-serif;
 $page-title-color: darken($link, 10%);
 
-
-
 body{
   color: $text-color;
-  /*background-color: lighten(#774849, 53%);*/
+  background-color: lighten(#774849, 53%);
   font-size: 1.6em;
   font-family: $main-font;
 
@@ -35,15 +33,15 @@ body{
   #admin-panel{
     height: 244px;
     background-color: white;
-
   }
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fce1e0+0,fddedb+41,f9bfbb+70,fec7bc+100 */
-   background: #fce1e0; /* Old browsers */
-   background: -moz-linear-gradient(top, #fce1e0 0%, #fddedb 41%, #f9bfbb 70%, #fec7bc 100%); /* FF3.6-15 */
-   background: -webkit-linear-gradient(top, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* Chrome10-25,Safari5.1-6 */
-   background: linear-gradient(to bottom, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1e0', endColorstr='#fec7bc',GradientType=0 ); /* IE6-9 */
+  //  background: #fce1e0; /* Old browsers */
+  //  background: -moz-linear-gradient(top, #fce1e0 0%, #fddedb 41%, #f9bfbb 70%, #fec7bc 100%); /* FF3.6-15 */
+  //  background: -webkit-linear-gradient(top, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* Chrome10-25,Safari5.1-6 */
+  //  background: linear-gradient(to bottom, #fce1e0 0%,#fddedb 41%,#f9bfbb 70%,#fec7bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1e0', endColorstr='#fec7bc',GradientType=0 ); /* IE6-9 */
+
 }
 
 header{
@@ -55,8 +53,6 @@ header{
   border-bottom: 2px solid #AF87AF;
   z-index: 1;
 }
-
-
 
 #header-content{
   margin-top: -240px;
