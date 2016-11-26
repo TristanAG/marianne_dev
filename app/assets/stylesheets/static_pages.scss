@@ -209,9 +209,36 @@ button:hover, input[type="submit"]:hover{
 }
 
 @media (max-width: 809px){
-  #header-content{
+  #menu-button{
+    font-family: $special-font;
+    letter-spacing: .3em;
+    font-size: 1.2em;
+    padding-top: 5px;
+    width: 400px;
+    max-width: 100%;
+    background-color: lighten($link, 38%);
+    border-radius: 4px;
 
+    ul {
+      list-style-type: none;
+      li a{
+      letter-spacing: .1em;
+      
+      font-family: $special-font;
+      font-size: .8em;
+      text-decoration: none;
+      color: $link;
+
+
+      &:hover{
+        color: $link-hover;
+        background-color: white;
+
+      }
+    }
   }
+  }
+
   main{
     margin-top: -60px;
     h1{
