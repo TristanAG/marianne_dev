@@ -117,6 +117,9 @@ aside{
   }
 }
 
+
+
+
 main{
   h1{
     font-family: $special-font;
@@ -127,6 +130,7 @@ main{
     color: $page-title-color;
     letter-spacing: .1em;
   }
+
 
   h2{
     font-size: 1.35em;
@@ -258,5 +262,41 @@ button:hover, input[type="submit"]:hover{
     text-align: center;
 
 
+  }
+}
+
+/* responsive normalization */
+@media(min-width: 1072px){
+  main{
+    h1{
+      margin-top: -5px;
+    }
+  }
+  aside{
+    padding-top: 150px;
+  }
+}
+@media ( max-width: 596px){
+  #header-content{
+    h4{
+      padding-top: 44px;
+    }
+  }
+}
+@media ( max-width: 540px){
+  #header-content{
+    h4{
+      padding-top: 14px;
+      margin-bottom: 9px;
+    }
+  }
+}
+@media ( max-width: 311px){
+  #header-content{
+    h4{
+      padding-top: 4px;
+      margin-bottom: -5px;
+      font-size: 1.2em;
+    }
   }
 }
