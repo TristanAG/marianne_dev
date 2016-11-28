@@ -15,7 +15,7 @@
   <% courses.each do |course| %>
     <div>
       <% if course.course_type == "mindfulness course" %>
-        <%= link_to course.name, mindfulnesscourses_path + '#' + course.name %>
+        <%= link_to course.name, mindfulnesscourses_path + '#' + course.anchor %>
       <% else %>
         <%= link_to course.name, new_course_path %>
       <% end %>
