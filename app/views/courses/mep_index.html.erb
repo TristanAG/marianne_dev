@@ -64,8 +64,8 @@ available in everyone's life?"</i><br>
 
 <% @courses.each do |course| %>
   <p>
-    <%= course.name %>
-    <br>
+    <h2 id="<%= course.anchor %>"><%= course.name %></h2>
+  
     <%= course.start_time.month %> / <%= course.start_time.day %>
     <br>
     first instance? <%= course.first_instance %>
