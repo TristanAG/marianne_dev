@@ -1,31 +1,38 @@
 <h1>Admin Index</h1>
 
 <h2>Mindfulness Courses</h2>
-<% @mindfulness_courses.each do |course| %>
-  <p>
-    <%= course.name %>
-    <br>
-    <%= course.start_time.month %> / <%= course.start_time.day %>
-    <br>
-    <% if course.first_instance %>
-      First Instance
+<div class="course-admin-single">
+  <% @mindfulness_courses.each do |course| %>
+
+      <h3><%= course.name %></h3>
       <br>
-    <% end %>
+      <%= course.course_content %>
+      <br>
+      <% if course.first_instance %>
+      <br>
+        <span class="first-instance-notice">=> This course is displayed to clients <=</span>
+      <% end %>
+      <% if course.include_in_calendar %>
+        <br>
+        <span class="first-instance-notice">=> This course can be seen on the calendar <=</span>
+        <br>
+      <% end %>
+      <br>
 
-    <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-  </p>
-<% end %>
+
+  <% end %>
+</div>
 
 <h2>MEP Courses</h2>
 <% @mep_courses.each do |course| %>
   <p>
     <%= course.name %>
     <br>
-    <%= course.start_time.month %> / <%= course.start_time.day %>
-    <br>
+
     <% if course.first_instance %>
-      First Instance
+      <i>This course is displayed to clients</i>
       <br>
     <% end %>
 

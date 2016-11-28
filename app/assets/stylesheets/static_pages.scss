@@ -145,6 +145,19 @@ main{
     visibility: hidden;
   }
 
+  .course-admin-single{
+    border: 1px dashed $link;
+    padding: 4px;
+    h3{
+      font-size: 1.2em;
+      margin: 0px;
+      padding: 0px;
+    }
+    .first-instance-notice{
+      color: red;
+    }
+  }
+
   article{
     font-family: $main-font;
     color: $text-color;
