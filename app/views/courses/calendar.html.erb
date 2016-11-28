@@ -5,12 +5,7 @@
 <h1>Calendar of Events</h1>
 
 <%= month_calendar events: @courses do |date, courses| %>
-
-  <div style="width:44px">
-    <span class="day"><%= date.day %></span>
-  </div>
-
-
+  <span class="day-num"><%= date.day %></span>
 
   <% courses.each do |course| %>
     <div>

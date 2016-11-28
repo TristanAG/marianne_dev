@@ -318,3 +318,51 @@ button:hover, input[type="submit"]:hover{
     }
   }
 }
+
+
+
+/* calendar styles */
+.simple-calendar {
+
+
+  th{
+    border-bottom: 1px solid lighten($link, 30%);
+  }
+
+  td.day {
+    border: 1px solid lighten($link, 30%);
+    padding-left: 2px;
+    padding-bottom: 22px;
+  }
+
+
+
+
+  .wday-0 {}
+  .wday-1 {}
+  .wday-2 {}
+  .wday-3 {}
+  .wday-4 {}
+  .wday-5 {}
+  .wday-6 {}
+
+  .today {
+    background-color: lighten($link, 40%);
+    border: 2px solid $link;
+  }
+  .past {
+    background-color: lightgray;
+
+  }
+  .future {
+    background-color: lightgray;
+  }
+
+  .start-date {}
+
+  .prev-month {}
+  .next-month { }
+  .current-month {}
+
+  .has-events {}
+}
