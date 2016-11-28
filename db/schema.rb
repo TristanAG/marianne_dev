@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128193153) do
+ActiveRecord::Schema.define(version: 20161128195231) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20161128193153) do
     t.boolean  "first_instance"
     t.boolean  "include_in_calendar"
     t.string   "anchor"
+    t.text     "course_content"
   end
 
   create_table "users", force: :cascade do |t|
