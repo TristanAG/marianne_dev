@@ -11,9 +11,6 @@ class StaticPagesController < ApplicationController
   def mindful_education_project
   end
 
-  def mindful_relating
-  end
-
   def questions_for_reflection
   end
 
