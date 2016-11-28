@@ -346,23 +346,31 @@ button:hover, input[type="submit"]:hover{
   .wday-5 {}
   .wday-6 {}
 
-  .today {
-    background-color: lighten($link, 40%);
-    border: 2px solid $link;
-  }
+
   .past {
     background-color: lightgray;
 
   }
   .future {
-    background-color: lightgray;
+    background-color: lighten($link, 50%);
   }
 
   .start-date {}
 
-  .prev-month {}
-  .next-month { }
-  .current-month {}
+  .prev-month {
+    background-color: lighten(lightgray, 5%);
+  }
+  .next-month {
+    background-color: lighten(lightgray, 5%);
+  }
+  .current-month {
+    background-color: lighten($link, 40%);
+  }
+
+  .today {
+    background: lighten($link, 33%);
+
+  }
 
   .has-events {}
 }

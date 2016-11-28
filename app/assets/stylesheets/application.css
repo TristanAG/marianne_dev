@@ -14,5 +14,6 @@
  *= require_self
  *= require normalize
  *= require skeleton
+ *= require simple_calendar
  *= require static_pages
  */
