@@ -292,7 +292,14 @@ button:hover, input[type="submit"]:hover{
   }
 }
 @media ( max-width: 311px){
+  header{
+    height: 140px;
+  }
   #header-content{
+    h3{
+      font-size: 1.8em;
+      margin-top: 86px;
+    }
     h4{
       padding-top: 4px;
       margin-bottom: -5px;
