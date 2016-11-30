@@ -1,9 +1,9 @@
 <h1>Admin Index</h1>
 
 <h2>Mindfulness Courses</h2>
-<div class="course-admin-single">
-  <% @mindfulness_courses.each do |course| %>
 
+  <% @mindfulness_courses.each do |course| %>
+    <div class="course-admin-single">
       <h3><%= course.name %></h3>
       <br>
       <%= course.course_content %>
@@ -20,23 +20,32 @@
       <br>
 
       <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-
+    </div>
+    <br>
   <% end %>
-</div>
+
+  <br>
+
 
 <h2>MEP Courses</h2>
 <% @mep_courses.each do |course| %>
-  <p>
-    <%= course.name %>
+<div class="course-admin-single">
+  <h3><%= course.name %></h3>
+  <br>
+  <%= course.course_content %>
+  <br>
+  <% if course.first_instance %>
+  <br>
+    <span class="first-instance-notice">=> This course is displayed to clients <=</span>
+  <% end %>
+  <% if course.include_in_calendar %>
     <br>
+    <span class="first-instance-notice">=> This course can be seen on the calendar <=</span>
+    <br>
+  <% end %>
+  <br>
 
-    <% if course.first_instance %>
-      <i>This course is displayed to clients</i>
-      <br>
-    <% end %>
-
-    <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-  </p>
+  <%= link_to 'Edit', edit_course_path(course) %> | <%= link_to 'Delete', course, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+<br>
 <% end %>

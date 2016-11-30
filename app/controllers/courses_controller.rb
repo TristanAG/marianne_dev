@@ -52,10 +52,21 @@ class CoursesController < ApplicationController
     @course.course_instances.times do |i|
       #flag the first_instance as unique for displaying in a list
       if i == 0
-        @course = Course.new({name: @course.name, course_content: @course.course_content, start_time: course_time[i], course_type: @course.course_type, include_in_calendar: @course.include_in_calendar, anchor: anchor, first_instance: true })
+        @course = Course.new({  name: @course.name,
+                                course_content: @course.course_content,
+                                start_time: course_time[i],
+                                course_type: @course.course_type,
+                                include_in_calendar: @course.include_in_calendar,
+                                anchor: anchor,
+                                first_instance: true })
         @course.save
       elsif i > 0
-        @course = Course.new({name: @course.name, course_content: @course.course_content, start_time: course_time[i], course_type: @course.course_type, include_in_calendar: @course.include_in_calendar, anchor: anchor })
+        @course = Course.new({  name: @course.name,
+                                course_content: @course.course_content,
+                                start_time: course_time[i],
+                                course_type: @course.course_type,
+                                include_in_calendar: @course.include_in_calendar,
+                                anchor: anchor })
         @course.save
       end
     end

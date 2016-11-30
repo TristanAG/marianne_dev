@@ -20,9 +20,10 @@
         <div class="container">
           <br>
           <h1>Hi, Marianne</h1>
-          <%= link_to 'List All Courses', admin_path %>
+          <%= link_to 'New Course', mindfulnesscourses_new_path %> | Create a New Course
           <br>
-          <%= link_to 'New Course', mindfulnesscourses_new_path %>
+          <%= link_to 'All Courses', admin_path %> | View, Edit, or Delete a Course
+
           <br>
           <br>
           <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
