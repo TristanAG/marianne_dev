@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161130220426) do
+ActiveRecord::Schema.define(version: 20161130221117) do
 
   create_table "courses", force: :cascade do |t|
     t.string   "name"
@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20161130220426) do
     t.string   "anchor"
     t.text     "course_content"
     t.datetime "start_time_4"
+    t.datetime "start_time_5"
+    t.datetime "start_time_6"
+    t.datetime "start_time_7"
+    t.datetime "start_time_8"
+    t.datetime "start_time_9"
+    t.datetime "start_time_10"
+    t.datetime "start_time_11"
+    t.datetime "start_time_12"
   end
 
   create_table "users", force: :cascade do |t|

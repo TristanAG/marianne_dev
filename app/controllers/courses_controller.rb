@@ -47,7 +47,15 @@ class CoursesController < ApplicationController
       @course.start_time_1,
       @course.start_time_2,
       @course.start_time_3,
-      @course.start_time_4
+      @course.start_time_4,
+      @course.start_time_5,
+      @course.start_time_6,
+      @course.start_time_7,
+      @course.start_time_8,
+      @course.start_time_9,
+      @course.start_time_10,
+      @course.start_time_11,
+      @course.start_time_12,
     ]
 
     @course.course_instances.times do |i|
@@ -116,7 +124,27 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:course_content, :anchor, :include_in_calendar, :first_instance, :course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :start_time_4, :course_instances)
+      params.require(:course).permit( :course_content,
+                                      :anchor,
+                                      :include_in_calendar,
+                                      :first_instance,
+                                      :course_type,
+                                      :test,
+                                      :name,
+                                      :start_time,
+                                      :start_time_1,
+                                      :start_time_2,
+                                      :start_time_3,
+                                      :start_time_4,
+                                      :start_time_5,
+                                      :start_time_6,
+                                      :start_time_7,
+                                      :start_time_8,
+                                      :start_time_9,
+                                      :start_time_10,
+                                      :start_time_11,
+                                      :start_time_12,
+                                      :course_instances )
     end
 
   protected
