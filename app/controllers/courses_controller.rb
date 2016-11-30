@@ -46,11 +46,12 @@ class CoursesController < ApplicationController
     course_time = [
       @course.start_time_1,
       @course.start_time_2,
-      @course.start_time_3
+      @course.start_time_3,
+      @course.start_time_4
     ]
 
     @course.course_instances.times do |i|
-      
+
       #flag the first_instance as unique for displaying in a list
       if i == 0
         @course = Course.new({  name: @course.name,
@@ -115,7 +116,7 @@ class CoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def course_params
-      params.require(:course).permit(:course_content, :anchor, :include_in_calendar, :first_instance, :course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :course_instances)
+      params.require(:course).permit(:course_content, :anchor, :include_in_calendar, :first_instance, :course_type, :test, :name, :start_time, :start_time_1, :start_time_2, :start_time_3, :start_time_4, :course_instances)
     end
 
   protected
