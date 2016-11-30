@@ -18,7 +18,7 @@
 
 <p>
   <strong>Start time:</strong>
-  <%= @course.start_time %>
+  <%= @course.start_time.strftime("%I:%M %P") %>
 </p>
 
 <% if user_signed_in? %>

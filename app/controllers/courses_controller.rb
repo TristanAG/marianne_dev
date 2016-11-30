@@ -50,6 +50,7 @@ class CoursesController < ApplicationController
     ]
 
     @course.course_instances.times do |i|
+      
       #flag the first_instance as unique for displaying in a list
       if i == 0
         @course = Course.new({  name: @course.name,
