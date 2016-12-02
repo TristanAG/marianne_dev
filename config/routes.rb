@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
   root 'static_pages#index'
 
-  devise_for :users
+  devise_for :users, :skip => [:registrations]
+
+  as :user do
+    get 'users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'
+    put 'users' => 'devise/registrations#update', :as => 'user_registration'
+  end
+
+  #devise_for :users
 
   devise_scope :user do
     get '/login', to: 'devise/sessions#new'
   end
+
+
 
   resources :courses, :path => 'mindfulness-courses'
   get '/admin', to: 'courses#admin_index'
