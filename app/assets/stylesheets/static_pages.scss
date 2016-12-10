@@ -281,9 +281,11 @@ button:hover, input[type="submit"]:hover{
       padding-bottom: 0px;
       border: 1px solid $text-color;
       transition: .3s;
-      
+
     }
     &:hover{
+      cursor: pointer;
+      
       color: $link;
       hr{
         border: 1px solid $link;
@@ -352,8 +354,8 @@ footer{
   }
 
   .notice{
-    margin-top: 6px;
-    margin-bottom: 6px;
+    margin-top: 16px;
+    margin-bottom: 21px;
     font-style: italic;
   }
 
