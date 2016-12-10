@@ -349,9 +349,23 @@ footer{
     border-bottom: 1px solid #AF87AF;
     border-top: 0px;
   }
+
+  .last{
+    text-align: right;
+  }
 }
+
 @media (max-width: 809px){
   // add responsive footer code here
+  footer{
+    text-align: left;
+    .ft{
+      margin-bottom:12px;
+    }
+    .last{
+      text-align: left;
+    }
+  }
 }
 
 /* calendar styles */
