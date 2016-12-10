@@ -276,6 +276,19 @@ button:hover, input[type="submit"]:hover{
   }
   #nav-mobile{
     text-align: center;
+    hr{
+      margin-bottom: 10px;
+      padding-bottom: 0px;
+      border: 1px solid $text-color;
+      transition: .3s;
+      
+    }
+    &:hover{
+      color: $link;
+      hr{
+        border: 1px solid $link;
+      }
+    }
   }
 }
 
