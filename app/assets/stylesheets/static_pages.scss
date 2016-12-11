@@ -173,6 +173,8 @@ main{
     margin: 0px;
     margin-top: -30px;
   }
+
+  
 }
 
 
@@ -285,7 +287,7 @@ button:hover, input[type="submit"]:hover{
     }
     &:hover{
       cursor: pointer;
-      
+
       color: $link;
       hr{
         border: 1px solid $link;
