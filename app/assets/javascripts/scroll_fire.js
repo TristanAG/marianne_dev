@@ -1,7 +1,7 @@
 $( document ).on('turbolinks:load', function() {
 
   var xPos = 683
-  var yPos = 300
+  var yPos = 350
 
   var length = $(window).scrollTop()
   var width = $(window).width()
