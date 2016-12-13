@@ -8,6 +8,7 @@
       <br>
       <%= course.course_content %>
       <br>
+      <%= course.start_time.strftime("%I:%M %P") %> | <%= course.date %> 
       <% if course.first_instance %>
       <br>
         <span class="first-instance-notice">=> This course is displayed to clients <=</span>

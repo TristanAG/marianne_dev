@@ -64,6 +64,12 @@
     </div>
 
     <div class="field">
+      Course Date(s):
+      <br>
+      <%= f.text_field :date %>
+    </div>
+
+    <div class="field">
       Type of Course:<br>Mindfulness Course <%= f.radio_button :course_type, "mindfulness course" %> &nbsp; &nbsp;
       MEP Course <%= f.radio_button :course_type, "mep course" %>
     </div>
@@ -97,57 +103,57 @@
 
     <div class="field" id="2">
       <%= f.label :start_time_2 %>
-      <%= f.datetime_select :start_time_2 %>
+      <%= f.datetime_select :start_time_2, ampm: true %>
     </div>
 
     <div class="field" id="3">
       <%= f.label :start_time_3 %>
-      <%= f.datetime_select :start_time_3 %>
+      <%= f.datetime_select :start_time_3, ampm: true %>
     </div>
 
     <div class="field" id="4">
       <%= f.label :start_time_4 %>
-      <%= f.datetime_select :start_time_4 %>
+      <%= f.datetime_select :start_time_4, ampm: true %>
     </div>
 
     <div class="field" id="5">
       <%= f.label :start_time_5 %>
-      <%= f.datetime_select :start_time_5 %>
+      <%= f.datetime_select :start_time_5, ampm: true %>
     </div>
 
     <div class="field" id="6">
       <%= f.label :start_time_6 %>
-      <%= f.datetime_select :start_time_6 %>
+      <%= f.datetime_select :start_time_6, ampm: true %>
     </div>
 
     <div class="field" id="7">
       <%= f.label :start_time_7 %>
-      <%= f.datetime_select :start_time_7 %>
+      <%= f.datetime_select :start_time_7, ampm: true %>
     </div>
 
     <div class="field" id="8">
       <%= f.label :start_time_8 %>
-      <%= f.datetime_select :start_time_8 %>
+      <%= f.datetime_select :start_time_8, ampm: true %>
     </div>
 
     <div class="field" id="9">
       <%= f.label :start_time_9 %>
-      <%= f.datetime_select :start_time_9 %>
+      <%= f.datetime_select :start_time_9, ampm: true %>
     </div>
 
     <div class="field" id="10">
       <%= f.label :start_time_10 %>
-      <%= f.datetime_select :start_time_10 %>
+      <%= f.datetime_select :start_time_10, ampm: true %>
     </div>
 
     <div class="field" id="11">
       <%= f.label :start_time_11 %>
-      <%= f.datetime_select :start_time_11 %>
+      <%= f.datetime_select :start_time_11, ampm: true %>
     </div>
 
     <div class="field" id="12">
       <%= f.label :start_time_12 %>
-      <%= f.datetime_select :start_time_12 %>
+      <%= f.datetime_select :start_time_12, ampm: true %>
     </div>
 
     <% if current_page?(controller: 'courses', action: 'new') %>
