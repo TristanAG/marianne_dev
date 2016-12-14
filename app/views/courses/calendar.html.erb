@@ -13,7 +13,7 @@
 
         <%= link_to truncate(course.name, length: 26), mindfulness_courses_path + '#' + course.anchor %> <br><small><%= course.start_time.strftime("%I:%M %P") %></small>
       <% else %>
-        <%= link_to course.name, mindful_education_project_path + '#' + course.anchor %>
+        <%= link_to truncate(course.name, length: 26), mindful_education_project_path + '#' + course.anchor %> <br><small><%= course.start_time.strftime("%I:%M %P") %></small>
       <% end %>
     </div>
   <% end %>
