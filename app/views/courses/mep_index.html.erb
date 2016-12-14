@@ -63,10 +63,14 @@ available in everyone's life?"</i><br>
 <h2>Offerings</h2>
 
 <% @courses.each do |course| %>
-  <p>
-    <p>
-      <h2 id="<%= course.anchor %>"><%= course.name %></h2>
-      <%= simple_format(course.course_content) %>
-    </p>
-  </p>
-<% end %>
+
+    <h2 id="<%= course.anchor %>"><%= course.name %></h2>
+    <%= course.start_time.strftime("%I:%M %P") %>
+
+    <%= simple_format(course.course_content) %>
+
+    <% if course.registration_link != nil %>
+      <p class="registration-link"><a href="<%= course.registration_link %>">Register</a></p>
+    <% end %>
+
+<% end %> 
