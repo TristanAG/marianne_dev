@@ -121,6 +121,7 @@ aside{
 
 
 main{
+
   h1{
     font-family: $special-font;
     margin-top: -33px;
@@ -276,15 +277,18 @@ button:hover, input[type="submit"]:hover{
   }
 
   main{
-    margin-top: -60px;
+
     h1{
-      margin-top: -60px;
+
       text-align: center;
     }
   }
   #nav-mobile{
     text-align: center;
+    margin-top: -62px;
+    margin-bottom: -28px;
     hr{
+
       margin-bottom: 10px;
       padding-bottom: 0px;
       border: 1px solid lighten($text-color, 23%);
@@ -442,4 +446,11 @@ footer{
   }
 
   .has-events {}
+}
+
+@media(min-width: 1072px){
+  main{
+
+    margin-top: -28px;
+  }
 }
