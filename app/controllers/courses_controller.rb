@@ -42,8 +42,7 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params)
 
-    #downcase this
-    anchor = @course.name.split(' ').join('_')
+    anchor = @course.name.gsub(/[^a-zA-Z0-9 -]/i, '').split(' ').join('_').downcase()
 
     course_time = [
       @course.start_time_1,
