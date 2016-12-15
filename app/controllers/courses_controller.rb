@@ -43,7 +43,7 @@ class CoursesController < ApplicationController
     @course = Course.new(course_params)
 
     anchor = @course.name.gsub(/[^a-zA-Z0-9 -]/i, '').split(' ').join('_').downcase()
-
+    #anchor = @course.name.split(' ').join('_').gsub(/[a-z_]i/).case()
     course_time = [
       @course.start_time_1,
       @course.start_time_2,

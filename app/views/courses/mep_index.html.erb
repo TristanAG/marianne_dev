@@ -65,8 +65,8 @@ available in everyone's life?"</i><br>
 <% @courses.each do |course| %>
 
     <h2 id="<%= course.anchor %>"><%= course.name %></h2>
+    <%= course.date %>
     <%= course.start_time.strftime("%I:%M %P") %>
-
     <%= simple_format(course.course_content) %>
 
     <% unless course.registration_link.blank? %>
