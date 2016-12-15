@@ -29,7 +29,7 @@
 
     <%= simple_format(course.course_content) %>
 
-    <% if course.registration_link != nil %>
+    <% unless course.registration_link.blank? %>
       <p class="registration-link"><a href="<%= course.registration_link %>">Register</a></p>
     <% end %>
 
