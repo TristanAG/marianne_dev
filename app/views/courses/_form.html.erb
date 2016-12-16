@@ -63,23 +63,31 @@
       <%= f.text_field :name %>
     </div>
 
-    <div class="field">
-      Course Date(s):
-      <br>
-      <%= f.text_field :date %>
-    </div>
+    <% if current_page?(controller: 'courses', action: 'new') %>
+      <div class="field">
+        Course Date(s):
+        <br>
+        <%= f.text_field :date %>
+      </div>
 
-    <div class="field">
-      Course Time(s):
-      <br>
-      <%= f.text_field :time %>
-    </div>
+      <div class="field">
+        Course Time(s):
+        <br>
+        <%= f.text_field :time %>
+      </div>
 
-    <div class="field">
-      Registration Link:
-      <br>
-      <%= f.text_field :registration_link %>
-    </div>
+      <div class="field">
+        Cost:
+        <br>
+        <%= f.text_field :cost %>
+      </div>
+
+      <div class="field">
+        Registration Link:
+        <br>
+        <%= f.text_field :registration_link %>
+      </div>
+    <% end %>
 
     <div class="field">
       Type of Course:<br>Mindfulness Course <%= f.radio_button :course_type, "mindfulness course", :checked => true %> &nbsp; &nbsp;
@@ -90,22 +98,22 @@
       Show in Calendar? &nbsp;<%= f.check_box :include_in_calendar %>
     </div>
 
-    <div class="field">
-      Course Description:
-      <br>
-      <%= f.text_area :course_content %>
-    </div>
+    <% if current_page?(controller: 'courses', action: 'new') %>
+      <div class="field">
+        Course Description:
+        <br>
+        <%= f.text_area :course_content %>
+      </div>
+    <% end %>
 
 
 
     <!-- don't show up in the edit action - just the 'new' action -->
     <% if !current_page?(controller: 'courses', action: 'new') %>
       <div class="field" id="1">
-
         <%= f.label :start_time %>
         <%= f.datetime_select :start_time, ampm: true %>
       </div>
-
     <% else %>
       <div class="field" id="1">
         <%= f.label :start_time %>

@@ -66,6 +66,7 @@ class CoursesController < ApplicationController
         @course = Course.new({  name: @course.name,
                                 date: @course.date,
                                 time: @course.time,
+                                cost: @course.cost,
                                 registration_link: @course.registration_link,
                                 course_content: @course.course_content,
                                 start_time: course_time[i],
@@ -76,9 +77,6 @@ class CoursesController < ApplicationController
         @course.save
       elsif i > 0
         @course = Course.new({  name: @course.name,
-                                date: @course.date,
-                                time: @course.time,
-                                course_content: @course.course_content,
                                 start_time: course_time[i],
                                 course_type: @course.course_type,
                                 include_in_calendar: @course.include_in_calendar,
@@ -140,6 +138,7 @@ class CoursesController < ApplicationController
                                       :date,
                                       :registration_link,
                                       :time,
+                                      :cost,
                                       :start_time,
                                       :start_time_1,
                                       :start_time_2,
