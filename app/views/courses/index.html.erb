@@ -29,7 +29,10 @@
       <%= course.date %><br>
     <% end %>
 
-    <%= course.start_time.strftime("%I:%M %P") %> | <%= course.cost %>
+    <%= course.start_time.strftime("%I:%M %P") %>
+    <% unless course.cost.blank? %>
+    | <%= course.cost %>
+    <% end %>
     <%= simple_format(course.course_content) %>
 
     <% unless course.registration_link.blank? %>
