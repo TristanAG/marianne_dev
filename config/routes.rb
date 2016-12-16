@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get '/servicesspecialties.html',      to: redirect('/services-and-specialties')
   get '/feesformsinsurance.html',       to: redirect('/fees-forms-and-insurance')
   get '/calendarofevents.html',         to: redirect('/calendar-of-events')
-  get '/mindfulnesscourses.html',       to: redirect('/mindfulness_courses')
+  get '/mindfulnesscourses.html',       to: redirect('/mindfulness-courses')
   get '/mindfuleducationproject.html',  to: redirect('/mindful-education-project')
   get '/questionsforreflection.html',   to: redirect('/questions-for-reflection')
   get '/officelocation.html',           to: redirect('/location-and-contact')
