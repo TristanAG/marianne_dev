@@ -88,11 +88,7 @@ header{
   //   }
   // }
 }
-@media (max-width: 661px){
-  #header-content #summary{
-    margin-top: 36px;
-  }
-}
+
 
 
 aside{
@@ -481,5 +477,11 @@ footer{
   main{
 
     margin-top: -28px;
+  }
+}
+
+@media (max-width: 661px){
+  #header-content #summary{
+    margin-top: 36px;
   }
 }
