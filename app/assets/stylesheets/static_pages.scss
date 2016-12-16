@@ -222,6 +222,16 @@ main{
   white-space: nowrap;
 }
 
+input[type="text"]{
+  width: 300px;
+  max-width: 100%;
+}
+textarea{
+  width: 600px;
+  height: 240px;
+  max-width: 100%;
+}
+
 button, input[type="submit"]{
   background-color: white;
 }
