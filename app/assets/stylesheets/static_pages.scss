@@ -81,7 +81,13 @@ header{
     font-size: 1.1em;
     text-shadow: -1px 0 #412C2B,0 1px #412C2B,1px 0 #412C2B,0 -1px #412C2B;
   }
+  @media (max-width: 661px){
+    #summary{
+      margin-top: 36px;
+    }
+  }
 }
+
 
 aside{
   font-family: $special-font;
