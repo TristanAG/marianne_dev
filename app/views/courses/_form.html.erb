@@ -87,16 +87,16 @@
         <br>
         <%= f.text_field :registration_link %>
       </div>
+
+      <div class="field">
+        Type of Course:<br>Mindfulness Course <%= f.radio_button :course_type, "mindfulness course", :checked => true %> &nbsp; &nbsp;
+        MEP Course <%= f.radio_button :course_type, "mep course" %>
+      </div>
+
+      <div class="field">
+        Show in Calendar? &nbsp;<%= f.check_box :include_in_calendar %>
+      </div>
     <% end %>
-
-    <div class="field">
-      Type of Course:<br>Mindfulness Course <%= f.radio_button :course_type, "mindfulness course", :checked => true %> &nbsp; &nbsp;
-      MEP Course <%= f.radio_button :course_type, "mep course" %>
-    </div>
-
-    <div class="field">
-      Show in Calendar? &nbsp;<%= f.check_box :include_in_calendar %>
-    </div>
 
     <% if current_page?(controller: 'courses', action: 'new') %>
       <div class="field">
