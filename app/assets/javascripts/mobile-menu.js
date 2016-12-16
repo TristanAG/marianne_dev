@@ -1,4 +1,5 @@
-$( document ).on( 'turbolinks:load', function() {
+// $( document ).on( 'turbolinks:load', function() {
+$( document ).ready( function() {
   //init state
   var visible = false
   $( '#mobile-menu' ).hide()
