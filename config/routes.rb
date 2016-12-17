@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   get '/mindfuleducationproject.html',  to: redirect('/mindful-education-project')
   get '/questionsforreflection.html',   to: redirect('/questions-for-reflection')
   get '/officelocation.html',           to: redirect('/location-and-contact')
-  get '/mindfulnessmeditation.html'     to: redirect('/mindfulness-courses')
-  get '/printableforms.html'            to: redirect('/fees-forms-and-insurance')
-  get '/emdrtft.html'                   to: redirect('/services-and-specialties')
+  get '/mindfulnessmeditation.html',    to: redirect('/mindfulness-courses')
+  get '/printableforms.html',           to: redirect('/fees-forms-and-insurance')
+  get '/emdrtft.html',                  to: redirect('/services-and-specialties')
 end
