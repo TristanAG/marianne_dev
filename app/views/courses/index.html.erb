@@ -34,7 +34,8 @@
 
     <%= course.time %>
     <% unless course.cost.blank? %>
-    | <%= course.cost %>
+      <br>
+      <%= course.cost %>
     <% end %>
     <%= simple_format(course.course_content) %>
 

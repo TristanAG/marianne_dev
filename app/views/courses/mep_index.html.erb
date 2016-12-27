@@ -64,19 +64,20 @@ available in everyone's life?"</i><br>
 
 <% @courses.each do |course| %>
 
-    <h2 id="<%= course.anchor %>"><%= course.name %></h2>
-    <% unless course.dates.blank? %>
-      <%= course.dates %><br>
-    <% end %>
+  <h2 id="<%= course.anchor %>"><%= course.name %></h2>
+  <% unless course.dates.blank? %>
+    <%= course.dates %><br>
+  <% end %>
 
-    <%= course.time %>
-    <% unless course.cost.blank? %>
-    | <%= course.cost %>
-    <% end %>
-    <%= simple_format(course.course_content) %>
+  <%= course.time %>
+  <% unless course.cost.blank? %>
+    <br>
+    <%= course.cost %>
+  <% end %>
+  <%= simple_format(course.course_content) %>
 
-    <% unless course.registration_link.blank? %>
-      <p class="registration-link"><a href="<%= course.registration_link %>">Register</a></p>
-    <% end %>
+  <% unless course.registration_link.blank? %>
+    <p class="registration-link"><a href="<%= course.registration_link %>">Register</a></p>
+  <% end %>
 
 <% end %>
