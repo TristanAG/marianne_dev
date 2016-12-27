@@ -65,8 +65,8 @@ available in everyone's life?"</i><br>
 <% @courses.each do |course| %>
 
     <h2 id="<%= course.anchor %>"><%= course.name %></h2>
-    <% unless course.date.blank? %>
-      <%= course.date %><br>
+    <% unless course.dates.blank? %>
+      <%= course.dates %><br>
     <% end %>
 
     <%= course.time %>

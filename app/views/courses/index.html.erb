@@ -18,8 +18,9 @@
   There is a No Refund Policy for non-attendance.
 </p>
 <p>
-  Because class size is limited, Advance Registration is required.
-  To register, please call (831) 373-1017.
+  Because class size is limited, Advance Registration is required. To register, please register online at
+
+<a href="http://www.montereybaymeditation.com">Monterey Bay Meditation Studio</a> or call <a href="tel:8313731017">(831) 373-1017</a>.
 </p>
 
 <hr>
@@ -27,8 +28,8 @@
 <% @courses.each do |course| %>
 
     <h2 id="<%= course.anchor %>"><%= course.name %></h2>
-    <% unless course.date.blank? %>
-      <%= course.date %><br>
+    <% unless course.dates.blank? %>
+      <%= course.dates %><br>
     <% end %>
 
     <%= course.time %>
