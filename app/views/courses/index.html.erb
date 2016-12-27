@@ -31,7 +31,7 @@
       <%= course.date %><br>
     <% end %>
 
-    <%= course.start_time.strftime("%I:%M %P") %>
+    <%= course.time %>
     <% unless course.cost.blank? %>
     | <%= course.cost %>
     <% end %>
