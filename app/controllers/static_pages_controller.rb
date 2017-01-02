@@ -17,6 +17,9 @@ class StaticPagesController < ApplicationController
   def location_and_contact
   end
 
+  def bio
+  end
+
   def faqs
   end
 end
