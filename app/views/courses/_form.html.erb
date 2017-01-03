@@ -75,7 +75,7 @@
       <%= f.text_field :dates %>
     </div>
 
-    <% if current_page?(controller: 'courses', action: 'new') %>
+
 
 
       <div class="field">
@@ -90,6 +90,7 @@
         <%= f.text_field :registration_link %>
       </div>
 
+    <% if current_page?(controller: 'courses', action: 'new') %>
       <div class="field">
         Type of Course:<br>Mindfulness Course <%= f.radio_button :course_type, "mindfulness course", :checked => true %> &nbsp; &nbsp;
         MEP Course <%= f.radio_button :course_type, "mep course" %>
