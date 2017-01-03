@@ -69,12 +69,14 @@
       <%= f.text_field :time %>
     </div>
 
+    <div class="field">
+      Course Date(s):
+      <br>
+      <%= f.text_field :dates %>
+    </div>
+
     <% if current_page?(controller: 'courses', action: 'new') %>
-      <div class="field">
-        Course Date(s):
-        <br>
-        <%= f.text_field :dates %>
-      </div>
+
 
       <div class="field">
         Cost:
