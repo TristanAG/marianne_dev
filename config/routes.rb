@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/fees-forms-and-insurance',  to: 'static_pages#fees_forms_and_insurance'
   get '/questions-for-reflection',  to: 'static_pages#questions_for_reflection'
   get '/location-and-contact',      to: 'static_pages#location_and_contact'
-  get '/bio',                       to: 'static_pages#bio'
+  get '/about-marianne',            to: 'static_pages#about_marianne'
   get '/faqs',                      to: 'static_pages#faqs'
 
   #old routes pre-migration
