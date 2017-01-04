@@ -64,7 +64,7 @@ class CoursesController < ApplicationController
       #flag the first_instance as unique for displaying in a list
       if i == 0
         @course = Course.new({  name: @course.name,
-                                date: @course.date,
+                                dates: @course.dates,
                                 time: @course.time,
                                 cost: @course.cost,
                                 registration_link: @course.registration_link,
@@ -77,6 +77,7 @@ class CoursesController < ApplicationController
         @course.save
       elsif i > 0
         @course = Course.new({  name: @course.name,
+                                time: @course.time,
                                 start_time: course_time[i],
                                 course_type: @course.course_type,
                                 include_in_calendar: @course.include_in_calendar,
@@ -135,7 +136,7 @@ class CoursesController < ApplicationController
                                       :course_type,
                                       :test,
                                       :name,
-                                      :date,
+                                      :dates,
                                       :registration_link,
                                       :time,
                                       :cost,
