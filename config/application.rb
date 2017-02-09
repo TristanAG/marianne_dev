@@ -13,6 +13,8 @@ module MarianneDev
     # -- all .rb files in that directory are automatically loaded.
     #config.assets.digest = false
 
+    config.time_zone = 'Pacific Time (US & Canada)'
     config.beginning_of_week = :sunday
+
   end
 end
